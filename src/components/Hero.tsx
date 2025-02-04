@@ -59,9 +59,9 @@ export const Hero = () => {
               <div className="absolute inset-0 bg-gradient-radial opacity-20 rounded-2xl" />
               <div className="relative bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl">
                 <img 
-                  src="/lovable-uploads/7fb6a1d0-2dce-4d3b-acba-3343d9d49f47.png" 
+                  src="/placeholder.svg" 
                   alt="Platform Preview" 
-                  className="w-full h-full object-cover rounded-xl"
+                  className="w-full h-full object-cover rounded-xl bg-secondary"
                 />
               </div>
             </div>
