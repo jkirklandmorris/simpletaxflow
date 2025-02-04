@@ -25,11 +25,11 @@ const features = [
 
 export const Features = () => {
   return (
-    <div id="features" className="py-16 bg-secondary">
+    <div id="features" className="py-24 bg-secondary">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Everything you need</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold mb-6">Everything you need</h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Our platform brings everything under one roof—from automated tax calculations to real-time cashflow insights, so you can focus on doing what you love.
           </p>
         </div>
@@ -37,11 +37,11 @@ export const Features = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="p-6 rounded-lg bg-background hover:bg-background/80 transition-colors duration-300"
+              className="p-8 rounded-lg bg-background hover:bg-background/80 transition-colors duration-300"
             >
-              <feature.icon className="w-12 h-12 text-primary mb-4 mx-auto" />
-              <h3 className="text-xl font-semibold mb-2 text-center">{feature.title}</h3>
-              <p className="text-muted-foreground text-center">{feature.description}</p>
+              <feature.icon className="w-16 h-16 text-primary mb-6 mx-auto" />
+              <h3 className="text-2xl font-semibold mb-4 text-center">{feature.title}</h3>
+              <p className="text-muted-foreground text-center leading-relaxed">{feature.description}</p>
             </div>
           ))}
         </div>

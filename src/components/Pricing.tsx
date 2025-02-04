@@ -37,26 +37,26 @@ const plans = [
 
 export const Pricing = () => {
   return (
-    <section id="pricing" className="bg-secondary py-16">
+    <section id="pricing" className="bg-secondary py-24">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Choose Your Plan</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold mb-6">Choose Your Plan</h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Whether you're just starting out or scaling up, we have a plan tailored to your needs.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {plans.map((plan, index) => (
             <div
               key={index}
-              className="bg-background p-8 rounded-lg border border-muted"
+              className="bg-background p-8 rounded-lg border border-muted flex flex-col"
             >
-              <h3 className="text-xl font-semibold mb-2">{plan.name}</h3>
-              <div className="text-3xl font-bold text-primary mb-6">
+              <h3 className="text-2xl font-semibold mb-4">{plan.name}</h3>
+              <div className="text-4xl font-bold text-primary mb-8">
                 {plan.price}
-                <span className="text-sm text-muted-foreground">{plan.period}</span>
+                <span className="text-base text-muted-foreground ml-1">{plan.period}</span>
               </div>
-              <ul className="space-y-4 mb-8">
+              <ul className="space-y-4 mb-8 flex-grow">
                 {plan.features.map((feature, i) => (
                   <li key={i} className="text-muted-foreground">
                     {feature}
@@ -64,7 +64,7 @@ export const Pricing = () => {
                 ))}
               </ul>
               <Button
-                className="w-full"
+                className="w-full text-lg py-6"
                 variant={index === 1 ? "default" : "outline"}
               >
                 Get {plan.name}

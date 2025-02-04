@@ -16,11 +16,11 @@ export const SignupForm = () => {
   };
 
   return (
-    <div id="signup" className="py-16 bg-secondary">
+    <div id="signup" className="py-24 bg-secondary">
       <div className="container mx-auto px-4">
-        <div className="max-w-2xl mx-auto bg-background rounded-lg p-8">
-          <h2 className="text-3xl font-bold text-center mb-4">Ready to Simplify Your Finances?</h2>
-          <p className="text-muted-foreground text-center mb-8">
+        <div className="max-w-2xl mx-auto bg-background rounded-lg p-12">
+          <h2 className="text-4xl font-bold text-center mb-6">Ready to Simplify Your Finances?</h2>
+          <p className="text-xl text-muted-foreground text-center mb-12 leading-relaxed">
             Join our early access list to be the first to enjoy automated tax and benefit claims. Get updates on our launch and exclusive beta invites.
           </p>
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -30,9 +30,9 @@ export const SignupForm = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="flex-1 max-w-md bg-secondary border-muted text-foreground"
+              className="flex-1 max-w-md bg-secondary border-muted text-foreground text-lg py-6"
             />
-            <Button type="submit" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+            <Button type="submit" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg py-6 px-8">
               Sign Up Now
             </Button>
           </form>

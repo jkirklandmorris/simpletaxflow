@@ -9,17 +9,17 @@ export const Hero = () => {
     <div className="relative min-h-[80vh] flex items-center bg-background">
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent">
             Stress free by midday
           </h1>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
             Invoicing, time tracking, file reconciliation, and financial oversight—all in one smart platform built for Dutch freelancers.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Button
               onClick={scrollToSignup}
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg"
             >
               Get Started
             </Button>
@@ -27,7 +27,7 @@ export const Hero = () => {
               onClick={() => document.getElementById("features")?.scrollIntoView({ behavior: "smooth" })}
               size="lg"
               variant="outline"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-6 text-lg"
             >
               Learn More
             </Button>
