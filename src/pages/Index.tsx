@@ -5,16 +5,16 @@ import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
-      <header className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50">
+    <div className="min-h-screen bg-secondary">
+      <header className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 shadow-sm">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            <div className="text-xl font-bold text-gray-900">FREETAX NL</div>
+            <div className="text-xl font-bold text-primary">SimpleTaxFlow</div>
             <button
               onClick={() => document.getElementById("signup")?.scrollIntoView({ behavior: "smooth" })}
               className="text-primary hover:text-primary/90 font-medium"
             >
-              Get Started
+              Sign Up
             </button>
           </div>
         </div>

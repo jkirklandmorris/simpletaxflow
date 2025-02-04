@@ -25,13 +25,23 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#2563eb",
+          DEFAULT: "#195DE2",
           foreground: "#ffffff",
         },
         secondary: {
-          DEFAULT: "#64748b",
+          DEFAULT: "#FAFAFA",
+          foreground: "#333333",
+        },
+        accent: {
+          DEFAULT: "#FF8A00",
           foreground: "#ffffff",
         },
+      },
+      maxWidth: {
+        container: "1100px",
+      },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
       },
       keyframes: {
         "accordion-down": {
@@ -42,15 +52,10 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        float: {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-5px)" },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        float: "float 3s ease-in-out infinite",
       },
     },
   },

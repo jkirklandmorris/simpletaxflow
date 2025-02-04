@@ -6,15 +6,14 @@ export const Hero = () => {
   };
 
   return (
-    <div className="relative min-h-[80vh] flex items-center">
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-gray-100 -z-10" />
+    <div className="relative min-h-[60vh] flex items-center bg-secondary">
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 animate-float">
-            Simplify Your Freelance Taxes in the Netherlands
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            Hassle-Free Freelancer Finances
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8">
-            We automate your cashflow tracking, VAT filings, and benefit claims so you can focus on your business.
+          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            Finally, a solution that automates your cashflow tracking, VAT returns, and benefit claims—so you can focus on the work you love.
           </p>
           <Button
             onClick={scrollToSignup}
