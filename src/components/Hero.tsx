@@ -6,22 +6,32 @@ export const Hero = () => {
   };
 
   return (
-    <div className="relative min-h-[60vh] flex items-center bg-secondary">
+    <div className="relative min-h-[80vh] flex items-center bg-background">
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Hassle-Free Freelancer Finances
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent">
+            Stress free by midday
           </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Finally, a solution that automates your cashflow tracking, VAT returns, and benefit claims—so you can focus on the work you love.
+          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Invoicing, time tracking, file reconciliation, and financial oversight—all in one smart platform built for Dutch freelancers.
           </p>
-          <Button
-            onClick={scrollToSignup}
-            size="lg"
-            className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg"
-          >
-            Get Early Access
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              onClick={scrollToSignup}
+              size="lg"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8"
+            >
+              Get Started
+            </Button>
+            <Button
+              onClick={() => document.getElementById("features")?.scrollIntoView({ behavior: "smooth" })}
+              size="lg"
+              variant="outline"
+              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+            >
+              Learn More
+            </Button>
+          </div>
         </div>
       </div>
     </div>

@@ -22,40 +22,30 @@ export default {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        background: "#0E0E0E",
+        foreground: "#FFFFFF",
         primary: {
-          DEFAULT: "#195DE2",
-          foreground: "#ffffff",
+          DEFAULT: "#F5C518",
+          foreground: "#000000",
         },
         secondary: {
-          DEFAULT: "#FAFAFA",
-          foreground: "#333333",
+          DEFAULT: "#1A1A1A",
+          foreground: "#FFFFFF",
+        },
+        muted: {
+          DEFAULT: "#2A2A2A",
+          foreground: "#BBBBBB",
         },
         accent: {
-          DEFAULT: "#FF8A00",
-          foreground: "#ffffff",
+          DEFAULT: "#F5C518",
+          foreground: "#000000",
         },
       },
       maxWidth: {
-        container: "1100px",
+        container: "1200px",
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],
-      },
-      keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
-        },
-      },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
   },
