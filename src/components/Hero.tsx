@@ -1,8 +1,22 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { toast } from "sonner";
 
 export const Hero = () => {
+  const [email, setEmail] = useState("");
+
   const scrollToSignup = () => {
     document.getElementById("signup")?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (email) {
+      console.log("Email submitted:", email);
+      toast.success("Thanks for signing up! We'll be in touch soon.");
+      setEmail("");
+    }
   };
 
   return (
@@ -20,23 +34,26 @@ export const Hero = () => {
               <p className="text-xl md:text-2xl text-muted leading-relaxed mb-12">
                 Invoicing, time tracking, file reconciliation, and financial oversight—all in one smart platform built for Dutch freelancers.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button
-                  onClick={scrollToSignup}
-                  size="lg"
-                  className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full"
-                >
+              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 mb-8">
+                <Input
+                  type="email"
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                  className="flex-1 bg-secondary border-muted text-foreground text-lg py-6"
+                />
+                <Button type="submit" className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg">
                   Start now →
                 </Button>
-                <Button
-                  onClick={() => document.getElementById("features")?.scrollIntoView({ behavior: "smooth" })}
-                  size="lg"
-                  variant="outline"
-                  className="border-2 border-foreground/20 hover:border-foreground/40 text-foreground px-8 py-6 text-lg rounded-full"
-                >
-                  Contact sales
-                </Button>
-              </div>
+              </form>
+              <Button
+                onClick={() => document.getElementById("features")?.scrollIntoView({ behavior: "smooth" })}
+                variant="outline"
+                className="border-2 border-foreground/20 hover:border-foreground/40 text-foreground px-8 py-6 text-lg rounded-full"
+              >
+                Contact sales
+              </Button>
             </div>
             <div className="relative w-full aspect-square">
               <div className="absolute inset-0 bg-gradient-radial opacity-20 rounded-2xl" />
