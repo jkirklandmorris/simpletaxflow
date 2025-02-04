@@ -47,13 +47,6 @@ export const Hero = () => {
                   Start now →
                 </Button>
               </form>
-              <Button
-                onClick={() => document.getElementById("features")?.scrollIntoView({ behavior: "smooth" })}
-                variant="outline"
-                className="border-2 border-foreground/20 hover:border-foreground/40 text-foreground px-8 py-6 text-lg rounded-full"
-              >
-                Contact sales
-              </Button>
             </div>
             <div className="relative w-full aspect-square">
               <div className="absolute inset-0 bg-gradient-radial opacity-20 rounded-2xl" />
