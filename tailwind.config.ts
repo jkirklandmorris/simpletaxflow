@@ -45,7 +45,7 @@ export default {
         container: "1200px",
       },
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
+        sans: ["Inter", "Helvetica Neue", "sans-serif"],
       },
     },
   },
