@@ -22,23 +22,23 @@ export default {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "#0E0E0E",
-        foreground: "#FFFFFF",
+        background: "#fff",
+        foreground: "#0A2540",
         primary: {
-          DEFAULT: "#F5C518",
-          foreground: "#000000",
-        },
-        secondary: {
-          DEFAULT: "#1A1A1A",
+          DEFAULT: "#635BFF",
           foreground: "#FFFFFF",
         },
+        secondary: {
+          DEFAULT: "#F6F9FC",
+          foreground: "#0A2540",
+        },
         muted: {
-          DEFAULT: "#2A2A2A",
-          foreground: "#BBBBBB",
+          DEFAULT: "#425466",
+          foreground: "#697386",
         },
         accent: {
-          DEFAULT: "#F5C518",
-          foreground: "#000000",
+          DEFAULT: "#00D4FF",
+          foreground: "#0A2540",
         },
       },
       maxWidth: {
@@ -46,6 +46,9 @@ export default {
       },
       fontFamily: {
         sans: ["Inter", "Helvetica Neue", "sans-serif"],
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(circle at top left, #BF40BF, #635BFF, #00D4FF)',
       },
     },
   },
